@@ -51,6 +51,36 @@ html {
     color: var(--main-bg-color)
 }
 
+/* ------------------------------------------------------ NavBar ------------------------------------------------------ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar__link {
+    display: inline-block; /* Pour que le padding soit pris en compte */
+    padding: 28px 0;
+    border-top: 2px solid transparent;
+}
+
+.navbar__link:hover {
+    color: var(--main-color);
+    border-top-color: var(--main-color);    
+}
+
+.navbar__logo {
+    width: 61px;
+    height: auto;
+}
+
 /* ------------------------------------------------------ Section : Polulaires ------------------------------------------------------ */
 
 .card {
