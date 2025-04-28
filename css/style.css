@@ -169,9 +169,36 @@ html {
     margin-bottom: 5px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/* ------------------------------------------------------ Footer ------------------------------------------------------ */
 
-/****** Media queries ***********/
+.footer {
+    background-color: var(--main-bg-color);
+    padding: 30px;
+}
+
+.footer__content {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__section {
+    flex: 1 1 30%; /* Chaque section prend 30% de la largeur du container, ce qui laisse 10% de marge entre elles */
+}
+
+.footer__section-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer__section-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+/****** ------------------------------------ Media queries ------------------------------------ ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -203,6 +230,14 @@ html {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites__article-image {
+        height: 200px;
+    }
+
+    .activites__article-info {
+        height: 70px;
     }
 }
 
