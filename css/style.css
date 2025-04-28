@@ -280,6 +280,77 @@ html {
     margin-bottom: 5px;
 }
 
+/* ------------------------------------- Section 2 : Hebergements ------------------------------------- */
+
+.hebergements__disposition {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.hebergements__disposition-card {
+    flex: 1 1 calc(33% - 30px);
+}
+
+.hebergements__card {
+    display: flex;
+    flex-direction: column; /* empile image + contenu */
+    background: #fff;
+    overflow: hidden; /* sécurise en cas de débordement */
+    border-radius: 20px;
+    padding: 5px;
+    min-width: 220px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.hebergements__card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hebergements__card img {
+    object-fit: cover; /* couvre l'espace disponible du parent, en gardant proportion d'origine */
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergements__card-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 5px;
+    gap: 8px;
+}
+
+.hebergements__card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hebergements__card-subtitle {
+    font-size: 14px;
+}
+
+.hebergements__card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hebergements__more-link {
+    display: inline-block; /* Permet de contrôler la taille du clic du bouton "afficher plus" */
+    width: auto;
+}
+
+.hebergements__more {
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+
 /* ------------------------------------------------------ Footer ------------------------------------------------------ */
 
 .footer {
