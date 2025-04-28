@@ -58,6 +58,47 @@
         </header>
         <main>
             <div class="hebergements-and-populaires">
+                <section id="hero" class="hero">
+                    <h1 class="hero__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        
+                    <p>En plein centre-ville ou en pleine nature.</p>
+        
+                    <!-- Formulaire de recherche -->
+                    <form method="post" action="traitement.php" class="form">
+                        <a href="https://www.google.com/maps?q=2+Cr+de+l'île+Louviers,+75004+Paris" target="_blank" aria-label="Ouvrir l'emplacement de l'agence sur google map">
+                            <i class="fa-solid fa-location-dot form__icon-gps" aria-hidden="true"></i>
+                        </a>
+                        <input type="search" name="city" placeholder="Marseille, France" class="form__input" aria-label="Recherche de ville">
+                        <button type="submit" class="form__button" aria-label="Rechercher une ville">
+                            <span>Rechercher</span>
+                        </button>
+                    </form>
+    
+                    <!-- Utilisation de <aside> pour les filtres, qui sont du contenu complémentaire lié à la page principale -->
+                    <aside class="filters" aria-labelledby="filters__title">
+                        <p id="filters__title" class="filters__title">Filtres</p>
+                        <ul class="filters__list">
+                            <li class="filters__item" tabindex="0">
+                                <i class="fas fa-money-bill-wave fa-solid filters__icon"></i>
+                                <span class="filters__label">Économique</span>
+                            </li>
+                            <li class="filters__item" tabindex="0">
+                                <i class="fa-solid fa-person filters__icon"></i>
+                                <span class="filters__label">Familial</span>
+                            </li>
+                            <li class="filters__item" tabindex="0">
+                                <i class="fas fa-heart fa-solid filters__icon"></i>
+                                <span class="filters__label">Romantique</span>
+                            </li>
+                            <li class="filters__item" tabindex="0">
+                                <i class="fas fa-fire fa-solid filters__icon"></i>
+                                <span class="filters__label">Nos pépites</span>
+                            </li>
+                        </ul>
+                    </aside>
+        
+                    <p class="hero__informations"><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                </section>
                 <section class="hebergements">
 
                 </section>

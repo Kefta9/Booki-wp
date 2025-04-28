@@ -81,6 +81,117 @@ html {
     height: auto;
 }
 
+/* ------------------------------------- Section 1 : Recherches -------------------------------------*/
+
+.hero__title {
+    padding: 30px 0 8px; /* Espace de 30px en haut et 8px en bas, 0 sur les côtés */
+}
+
+.form {
+    display: flex; /* Les éléments sont côte à côte */
+    align-items: center; /* Centrer verticalement les éléments */
+    padding: 35px 0; 
+}
+
+.form__icon-gps {
+    font-size: 18px; /* Taille de l'icône */
+    padding: 18px; /* Espace autour de l'icône */
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0 0 15px; 
+    color: #000;
+}
+
+.form__input {
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 20px;
+    outline: none;  /* Supprime le contour bleu sur le focus */
+    height: 54px;
+    border-top: var(--main-bg-color) solid 2px;
+    border-bottom: var(--main-bg-color) solid 2px;
+}
+
+.form__input::placeholder {
+    color: #000; /* Change la couleur du texte placeholder */
+}
+
+.form__button {
+    background-color: var(--main-color);
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    cursor: pointer; 
+    height: 54px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+    gap: 15px;
+}
+
+.filters__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filters__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filters__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    min-width: 170px;
+    gap: 10px;
+    border: 2px solid var(--filter-grey-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filters__item:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filters__item:focus {
+    background-color: var(--filter-bg-color);
+}
+
+.filters__icon {
+    font-size: 22px;
+}
+
+.filters__label {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.hero__informations {
+    padding-bottom: 35px;
+}
+
+.hero__informations i {
+    border: var(--filter-grey-color) solid 1px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex; /* pour centrer le contenu, i est inline par défaut, on conserve */
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
 /* ------------------------------------------------------ Section : Polulaires ------------------------------------------------------ */
 
 .card {
